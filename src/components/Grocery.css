@@ -1,0 +1,114 @@
+.grocerylist-div {
+    width: 550px;
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "li button-edit button-purchased button-delete";
+}
+.li-style {
+    display: inline-block;
+    font-size: 24px;
+    grid-area:li;
+    font-weight: bold;
+    
+}
+.li-style-purchased {
+    text-decoration: line-through;
+    grid-area:li;
+}
+#edit-button {
+    grid-area: button-edit;
+    padding: 10px 5px;
+    background-color: #03fc90;
+    border-radius: 5px 5px;
+    color: white;
+    border-style: none;
+    margin:0px 10px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+#purchase-button {
+    grid-area: button-purchased;
+    padding: 10px 5px;
+    background-color: #372eb9;
+    border-radius: 5px 5px;
+    color: white;
+    border-style: none;
+    margin:0px 10px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+#delete-button {
+    grid-area: button-delete;
+    padding: 10px 5px;
+    background-color: #fc0303;
+    border-radius: 5px 5px;
+    color: white;
+    border-style: none;
+    margin:0px 10px ;
+    font-size: 16px;
+    font-weight: bold;
+}
+#edit-button:active {
+    box-shadow: 5px 5px 30px rgba(47, 143, 68, 0.4);
+}
+#purchase-button:active {
+    box-shadow: 5px 5px 30px rgba(197, 184, 5, 0.4);
+    }
+#delete-button:active {
+    box-shadow: 5px 5px 30px rgba(245, 4, 4, 0.4);
+}
+.form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.form-div form > input {
+    width: 450px;
+    padding: 20px 20px;
+    border: none;
+    border-bottom: 1.5px solid grey;
+}
+.form-div form > input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid black;
+}
+.form-div form > input:active {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+.form-div form > button {
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px 5px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.grocery-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.grocery-div ul > li {
+    list-style: none;
+}
+.sorting {
+    display: flex;
+    justify-content: center;
+}
+.sorting ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+.sorting button{
+    background-color: rgb(21, 5, 80);
+    padding:5px 8px;
+    color:white;
+    margin: 5px;
+    border-color: white;
+    font-size: 12px;
+}
